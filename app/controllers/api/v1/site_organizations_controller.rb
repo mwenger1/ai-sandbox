@@ -1,6 +1,7 @@
 module Api
   module V1
     class SiteOrganizationsController < ApplicationController
+      before_action :authenticate
       before_action :set_site_organization, only: [:show, :update, :destroy]
 
       def index
