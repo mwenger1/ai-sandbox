@@ -1,0 +1,9 @@
+<h1>Site Organizations</h1>
+<ul class="site-organizations-list">
+  <% @site_organizations.each do |org| %>
+    <li class="site-organization-item">
+      <h2><%= org.name %></h2>
+      <p><%= org.description %></p>
+    </li>
+  <% end %>
+</ul>
