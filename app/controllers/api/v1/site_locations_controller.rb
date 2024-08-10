@@ -1,6 +1,7 @@
 module Api
   module V1
     class SiteLocationsController < ApplicationController
+      before_action :authenticate
       before_action :set_site_location, only: [:show, :update, :destroy]
 
       def index
